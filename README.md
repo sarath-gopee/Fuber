@@ -3,6 +3,7 @@ Fuber code
 
 Assumptions made :
 1. since the UI / DB was not a mandatory portion, i have skipped the same. I have dealt the data within the Java side itself using static block of code for data initialization and collections to store / update them.
+Some of the default values for the objects created might be seen as null in the inital response due to the above mentioned reason.
 
 Flow of the code:
 Once the project is executed, the services starts with a GET method call by the customer to find cars that are near him/her(3 kms radius)
