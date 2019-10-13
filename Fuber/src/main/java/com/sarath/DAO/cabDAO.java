@@ -2,13 +2,7 @@ package com.sarath.DAO;
 import com.sarath.model.Location;
 import com.sarath.model.cabData;
 import com.sarath.model.customer;
-import com.sarath.model.tripData;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -2,8 +2,6 @@ package com.sarath.model;
 
 import javax.annotation.Resource;
 
-import org.springframework.stereotype.Component;
-
 @Resource
 public class Location {
 	

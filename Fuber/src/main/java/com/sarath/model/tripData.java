@@ -1,6 +1,6 @@
 package com.sarath.model;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -11,15 +11,19 @@ public class tripData {
 	private Location startPoint;
 	@Autowired
 	private Location endPoint;
-	private int tripFare;
-	private double tripDistance;
-	private Date startTime;
-	private Date endTime;
+	private Double tripFare;
+	private Double tripDistance; // in kms
+	private LocalDateTime startTime;
+	private LocalDateTime endTime;
+	private Double totalTime; // in minutes
 	
 	public tripData(Location startPoint, Location endPoint) {
 		super();
 		this.startPoint = startPoint;
-		this.endPoint = endPoint;	
+		this.endPoint = endPoint;
+		tripFare = 0.0;
+		tripDistance = 0.0;
+		totalTime = 0.0;
 	}
 	
 	public Location getStartPoint() {
@@ -34,29 +38,37 @@ public class tripData {
 	public void setEndPoint(Location endPoint) {
 		this.endPoint = endPoint;
 	}
-	public int getTripFare() {
+	public Double getTripFare() {
 		return tripFare;
 	}
-	public void setTripFare(int tripFare) {
+	public void setTripFare(Double tripFare) {
 		this.tripFare = tripFare;
 	}
 	public double getTripDistance() {
 		return tripDistance;
 	}
-	public void setTripDistance(double tripDistance) {
+	public void setTripDistance(Double tripDistance) {
 		this.tripDistance = tripDistance;
 	}
-	public Date getStartTime() {
+	public LocalDateTime getStartTime() {
 		return startTime;
 	}
-	public void setStartTime(Date startTime) {
+	public void setStartTime(LocalDateTime startTime) {
 		this.startTime = startTime;
 	}
-	public Date getEndTime() {
+	public LocalDateTime getEndTime() {
 		return endTime;
 	}
-	public void setEndTime(Date endTime) {
+	public void setEndTime(LocalDateTime endTime) {
 		this.endTime = endTime;
+	}
+
+	public Double getTotalTime() {
+		return totalTime;
+	}
+
+	public void setTotalTime(Double totalTime) {
+		this.totalTime = totalTime;
 	}
 
 }
