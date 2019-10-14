@@ -54,10 +54,4 @@ public class cabDAO {
 		allCabs.put(cab10.getCabID(), cab10);
 	}
 	
-	//returns the master list of all cabs.
-	  public HashMap<Integer, cabData> getAllCabs() 
-	    {
-	        return allCabs;
-	    }
-	
 }
